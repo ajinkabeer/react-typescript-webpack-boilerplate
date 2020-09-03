@@ -1,9 +1,10 @@
 var HtmlWebpackPlugin = require("html-webpack-plugin");
 var MiniCssExtractPlugin = require("mini-css-extract-plugin");
+var mode = process.env.NODE_ENV || "development";
 
 module.exports = {
   entry: "./src/index.tsx",
-  devtool: "eval-source-map",
+  devtool: mode === "development" ? "eval-source-map" : false,
   resolve: {
     extensions: [".js", ".ts", ".tsx"],
   },
