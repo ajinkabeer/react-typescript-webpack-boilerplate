@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "webpack --mode production",
+    "build": "npm run type-check && webpack --mode production",
     "start": "webpack-dev-server --open --mode development",
     "type-check": "tsc"
   },
