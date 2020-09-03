@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import "../style/app.css";
 
 type JokeType = {
   categories: string[];
