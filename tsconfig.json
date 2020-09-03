@@ -9,7 +9,9 @@
     "skipLibCheck": true,
     "jsx": "react",
     "sourceMap": true,
-    "resolveJsonModule": true
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true
   },
   "include": ["./src/**/*"]
 }
