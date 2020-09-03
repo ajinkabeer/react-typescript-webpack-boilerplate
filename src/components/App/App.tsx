@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "../style/app.css";
+import AppCSS from "./App.module.css";
 
 type JokeType = {
   categories: string[];
@@ -27,14 +27,14 @@ const App = () => {
 
   if (isLoading) {
     return (
-      <div className="container">
+      <div className={AppCSS.container}>
         <p>Loading..</p>
       </div>
     );
   }
 
   return (
-    <div className="container">
+    <div className={AppCSS.container}>
       <img src={jokes?.icon_url} />
       <p>{jokes?.value}</p>
     </div>

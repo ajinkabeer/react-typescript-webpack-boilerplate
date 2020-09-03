@@ -1,6 +1,6 @@
 import React from "react";
 import { render, screen, act } from "@testing-library/react";
-import App from "../components/App";
+import App from "../components/App/App";
 
 global.fetch = jest.fn(() =>
   Promise.resolve({
