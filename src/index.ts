@@ -1,5 +1,5 @@
-function log(str: string) {
+export function log(str: string) {
   console.log(str);
 }
 
-log("Hello world");
+log("1");
